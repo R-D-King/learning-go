@@ -178,3 +178,7 @@ _cgo_export.*
 # Application binary
 /bin/
 /pkg/
+
+# IDE files
+.idea
+.vscode/

@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	cipherText := "CSOITEUIWUIZNSROCNKFD"
+	cipherText := "ECFRZKYGLGRMUSDHRXK"
 	keyword := "GOLANG"
 	decryptedText := "" // Initialize an empty string to build the result
 

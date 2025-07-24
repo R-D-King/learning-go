@@ -3,12 +3,15 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"strings"
 )
 
 func main() {
 	// header
-	fmt.Printf("%-20v %5v %-15v %10v\n", "SpaceLine", "Days", "Trip Type", "Price ($M)")
-	fmt.Println("=====================================================")
+	header := fmt.Sprintf("%-20v %5v %-15v %10v", "SpaceLine", "Days", "Trip Type", "Price ($M)")
+	fmt.Println(header)
+	separator := strings.Repeat("=", len(header))
+	fmt.Println(separator)
 
 	for i := 10; i > 0; i-- {
 		ticketGenerator()

@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"time"
 )
 
 // code for monkey
@@ -14,25 +15,23 @@ func (m monkey) String() string {
 	return m.name
 }
 func (m monkey) move() string {
-	move := []string{"jumps", "swings"}
-	switch rand.Intn(len(move)) {
+	switch rand.Intn(2) {
 	case 0:
-		return move[0]
+		return "jumps"
 	case 1:
-		return move[1]
+		return "swings"
 	default:
 		return "!!!"
 	}
 }
 func (m monkey) eat() string {
-	food := []string{"banana", "orange", "ant"}
-	switch rand.Intn(len(food)) {
+	switch rand.Intn(3) {
 	case 0:
-		return food[0]
+		return "banana"
 	case 1:
-		return food[1]
+		return "orange"
 	case 2:
-		return food[2]
+		return "ant"
 	default:
 		return "!!!"
 	}
@@ -47,25 +46,23 @@ func (h horse) String() string {
 	return h.name
 }
 func (h horse) move() string {
-	move := []string{"jumps", "runs"}
-	switch rand.Intn(len(move)) {
+	switch rand.Intn(2) {
 	case 0:
-		return move[0]
+		return "jumps"
 	case 1:
-		return move[1]
+		return "runs"
 	default:
 		return "!!!"
 	}
 }
 func (h horse) eat() string {
-	food := []string{"grass", "apple", "carrot"}
-	switch rand.Intn(len(food)) {
+	switch rand.Intn(3) {
 	case 0:
-		return food[0]
+		return "grass"
 	case 1:
-		return food[1]
+		return "apple"
 	case 2:
-		return food[2]
+		return "carrot"
 	default:
 		return "!!!"
 	}
@@ -96,9 +93,12 @@ func main() {
 	}
 	var hour int
 
+	// Simulate a 3-day cycle
 	for day := 1; day <= 3; day++ {
 		fmt.Printf("Day %d\n", day)
 		hour = 0
+		// Simulate 24 hours in a day
+		// Animals are active between sunrise and sunset
 		for i := 0; i < 24; i++ {
 			hour++
 			fmt.Printf("%02d:00 ", hour)
@@ -108,6 +108,7 @@ func main() {
 				i := rand.Intn(len(animals))
 				doSomething(animals[i])
 			}
+			time.Sleep(500 * time.Millisecond) // Sleep for 500 milliseconds to simulate time passing
 		}
 	}
 }

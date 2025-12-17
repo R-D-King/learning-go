@@ -1,14 +1,17 @@
 # Learning Go Programming Language
 
-This repo is for practicing and exploring the go programming language.
-There should be separate branches for every source I'm learning from.
+This repository is dedicated to my journey of learning and exploring the Go programming language. It serves as a collection of exercises, projects, and experiments from various learning resources.
 
-[get-programming-with-go](./get-programmin-with-go) is the exercises and experiments done while learning and following the book by the same name.
-It's a book about the basics and suitable for new programmers in general.
+**Current Focus:** Actively working through the "get-programming-with-go" exercises and exploring web development with "snippetbox".
 
-[snippetbox](./snippetbox) is a project done while following the book "Let's Go".
-In this book we’ll be building a web application called Snippetbox, which lets people paste and share snippets of text — a bit like Pastebin or GitHub’s Gists.
+---
 
-[go_for_beginners](./go_for_beginners) is a project done while following [Go for Absolute Beginners – Tutorial](https://www.youtube.com/watch?v=akosxcqJorU&t=13175s)
-not the best for building a strong foundation.
-but was a good introduction to the language's most used features (like the net/http package, logging, error handling)
+## Repository Structure & Learning Paths
+
+This repository is organized into different directories, each corresponding to a specific learning resource or project. I aim to maintain separate branches for each learning source to keep the progress organized.
+
+### Learning Resources:
+
+*   **[Get Programming with Go](./get-programmin-with-go)**: This directory contains exercises and experiments from the book "Get Programming with Go". It focuses on the basics and is suitable for new programmers.
+*   **[Snippetbox Web Application](./snippetbox)**: This project is built while following the book "Let's Go". Snippetbox is a web application designed for pasting and sharing text snippets, similar to Pastebin or GitHub Gists.
+*   **[Go for Absolute Beginners Tutorial](./go_for_beginners)**: These are notes and code from the "[Go for Absolute Beginners – Tutorial](https://www.youtube.com/watch?v=akosxcqJorU&t=13175s)" YouTube series. While perhaps not ideal for building a strong foundational understanding, it provided a good introduction to commonly used Go features like the `net/http` package, logging, and error handling.

@@ -182,3 +182,6 @@ _cgo_export.*
 # IDE files
 .idea
 .vscode/
+
+# air temporary folder
+snippetbox/tmp
